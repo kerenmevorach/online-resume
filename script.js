@@ -15,7 +15,6 @@ circleButton.onclick= function () {
     circleButton.style.top = 'calc(50% - 1000px)';
     circleButton.style.left = 'calc(50% - 1000px)';
     circleButton.style.transitionDuration = '3s';
-
     //figure out tming and delay
 
     if (randomColor == '#F7D6FA') {

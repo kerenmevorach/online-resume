@@ -22,7 +22,6 @@
     position: fixed;
     left: calc(50% - 15px);
     top: calc(50% - 15px);
-
     /* transition-duration: 3s; */
  }
 
@@ -42,7 +41,6 @@
  }
 
  a{
-    /* text-decoration: none; */
     color: white;
  }
 
