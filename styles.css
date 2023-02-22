@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('NeueHaasUnica-Light.ttf') format('truetype');
+	font-weight: 100;
+ }
+
+ :root{
+    --text-size: 26px;
+    --leading: calc(var(--text-size)*1.12);
+ }
+
+ body{
+    font-family: 'Neue Haas Unica';
+    /* background-color: blue; */
+ }
+
+ .circle{
+    /* background-color: blue; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+
+    /* transition-duration: 3s; */
+ }
+
+ .circle:hover{
+    cursor: pointer;
+ }
+
+ .text{
+    max-width: 30ch;
+    font-size: var(--text-size);
+    line-height: var(--leading);
+    margin: 20px;
+    color: white;
+    position: relative;
+    /* transition-delay: 10ms; */
+    /* transition-duration: 0.2s; */
+ }
+
+ a{
+    /* text-decoration: none; */
+    color: white;
+ }
+
+ a:hover{
+   opacity:0.75;
+ }
+
+ @media (min-width: 500px) {
+
+    :root{
+        --text-size: 32px;
+    }
+    
+    .text{
+        max-width: 36ch;
+        margin: 30px;
+    }
+ }
+
+ @media (min-width: 885px) {
+
+    :root{
+        --text-size: 42px;
+    }
+    
+    /* .text{
+        max-width: 34ch;
+    } */
+ }
