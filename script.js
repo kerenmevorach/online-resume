@@ -23,9 +23,9 @@ circleButton.onclick= function () {
         aboutText.style.mixBlendMode = 'difference';
     }
 
-    if (randomColor == '#4EEDFF') {
-        aboutText.style.mixBlendMode = 'darken';
-    }
+    // if (randomColor == '#4EEDFF') {
+    //     aboutText.style.color = 'black';
+    // }
 
 
     // mix-blend-mode: darken;
