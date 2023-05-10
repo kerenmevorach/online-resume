@@ -1,13 +1,15 @@
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('NeueHaasUnica-Light.ttf') format('truetype');
+	src: url('NeueHaasUnica-Regular.ttf') format('truetype');
 	font-weight: 100;
  }
 
  :root{
-    --text-size: 26px;
-    --leading: calc(var(--text-size)*1.12);
- }
+    --text-size: 18px;
+    /* --leading: calc(var(--text-size)*1.12); */
+    --leading: 22px;
+  }
+ 
 
  body{
     font-family: 'Neue Haas Unica';
@@ -25,23 +27,39 @@
     /* transition-duration: 3s; */
  }
 
+ .circle-click{
+   width: 2000px;
+   height: 2000px;
+   top: calc(50% - 1000px);
+   left: calc(50% - 1000px);
+   transition-duration: 3s;
+   border-radius: 0%;
+ }
+
  .circle:hover{
     cursor: pointer;
  }
 
  .text{
-    max-width: 30ch;
+    max-width: 42ch;
     font-size: var(--text-size);
     line-height: var(--leading);
     margin: 20px;
     color: white;
     position: relative;
+    /* mix-blend-mode:; */
     /* transition-delay: 10ms; */
     /* transition-duration: 0.2s; */
  }
 
+ .container{
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+
  a{
     color: white;
+    text-decoration: underline;
  }
 
  a:hover{
@@ -51,20 +69,23 @@
  @media (min-width: 500px) {
 
     :root{
-        --text-size: 32px;
+        /* --text-size: 32px; */
     }
     
     .text{
-        max-width: 36ch;
-        margin: 30px;
-    }
+        /* max-width: 36ch; */
+        /* margin: 30px; */
+    } 
  }
+
+
 
  @media (min-width: 885px) {
 
-    :root{
-        --text-size: 42px;
-    }
+    /* .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    } */
     
     /* .text{
         max-width: 34ch;
